@@ -14,7 +14,10 @@
   <body>
 
     <p>
-      <?php echo str_replace($badword, "***", $testo); ?>
+      <?php
+        echo str_replace($badword, "***", $testo);
+        echo "<br> Lunghezza: ".strlen($testo);
+      ?>
     </p>
 
   </body>
